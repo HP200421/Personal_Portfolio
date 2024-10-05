@@ -1,7 +1,4 @@
-import salesforce from './salesforce.png'
-import bolt from './Bolt.png'
+import salesforce from "./salesforce.png";
+import bolt from "./bolt.png";
 
-export {
-    salesforce,
-    bolt,
-}
+export { salesforce, bolt };
