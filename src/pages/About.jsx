@@ -12,7 +12,7 @@ import CTA from "../components/CTA";
 const About = () => {
   return (
     <section className="max-container">
-      <h1 className="head-text ">
+      <h1 className="head-text">
         Hello, I'm{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Haridas Pawar
@@ -21,9 +21,9 @@ const About = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-600">
         <p>
-          An engineering student at Sinhgad College. I'm currently in my fourth
-          year of engineering with pointer of 8 sgpa. Being tech enthusiastic,
-          I'm always eager to learn new technologies.
+          With a passion for full-stack development, I am a proficient developer
+          capable of designing and developing complex applications with
+          expertise in React and Node.js.
         </p>
       </div>
 
@@ -51,8 +51,9 @@ const About = () => {
 
         <div className="mt-5 flex flex-col gap-3 text-slate-600">
           <p>
-            I've worked out with Bolt IOT and Salesforce, leveling up my skills
-            and teaming up with smart people. Here's the rundown:
+            I've worked out with Bolt IOT and currently working in{" "}
+            <b> Touchmedia Ads Software</b>, leveling up my skills and teaming
+            up with smart people. Here's the rundown:
           </p>
         </div>
 
