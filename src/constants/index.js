@@ -210,7 +210,7 @@ export const projects = [
   {
     iconUrl: analysis,
     theme: "btn-back-black",
-    name: "Hotel Booking Analysis",
+    name: "Hotel Booking Sentiment Analysis",
     description:
       "A Python project employing data visualization to analyze trends in hotel booking cancellations, offering valuable insights for informed decision-making by hotel managers and stakeholders.",
     link: "https://github.com/HP200421/Analysis_of_Hotel_Booking_Cancellation",
