@@ -29,7 +29,7 @@ export default function ContributionGraph() {
   }
 
   return (
-    <div className="flex flex-col xl:flex-row gap-4 p-4">
+    <div className="flex flex-col xl:flex-row gap-4">
       <div className="bg-white  border border-gray-200 dark:border-gray-800 p-6 rounded-lg lg:w-[52.1vw] w-full">
         <GitHubCalendar
           username={username}
@@ -39,7 +39,7 @@ export default function ContributionGraph() {
           theme={githubData}
         />
       </div>
-      <div className="flex flex-wrap xl:flex-col gap-2">
+      <div className="flex flex-wrap xl:flex-col gap-2 m-auto">
         {years.slice(0, 5).map((year) => (
           <YearButton
             key={year}
