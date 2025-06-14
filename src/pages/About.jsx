@@ -1,4 +1,3 @@
-import React from "react";
 import { skills, experiences } from "../constants";
 
 // React-Vertical-Timeline-Imports
@@ -9,30 +8,15 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import CTA from "../components/CTA";
 
-const About = () => {
+export default function About() {
   return (
     <section className="max-container">
-      <h1 className="head-text">
-        Hello, I'm{" "}
-        <span className="blue-gradient_text font-semibold drop-shadow">
-          Haridas Pawar
-        </span>
-      </h1>
-
-      <div className="mt-5 flex flex-col gap-3 text-slate-600">
-        <p>
-          With a passion for full-stack development, I am a proficient developer
-          capable of designing and developing complex applications with
-          expertise in React and Node.js.
-        </p>
-      </div>
-
-      <div className="py-10 flex flex-col">
+      <div className="flex flex-col">
         <h3 className="subhead-text">My Skills</h3>
 
         <div className="mt-16 flex flex-wrap gap-12">
           {skills.map((skill) => (
-            <div className="block-container w-20 h-20">
+            <div className="block-container w-20 h-20" key={skill.name}>
               <div className="btn-back rounded-xl" />
               <div className="btn-front rounded-xl flex justify-center items-center">
                 <img
@@ -51,9 +35,9 @@ const About = () => {
 
         <div className="mt-5 flex flex-col gap-3 text-slate-600">
           <p>
-            I've worked out with Bolt IOT and currently working in{" "}
-            <b> Touchmedia Ads Software</b>, leveling up my skills and teaming
-            up with smart people. Here's the rundown:
+            I've worked out with Touchmedia Ads Software and currently working
+            in <b> Metron Security</b>, leveling up my skills and teaming up
+            with smart people. Here's the rundown:
           </p>
         </div>
 
@@ -61,6 +45,7 @@ const About = () => {
           <VerticalTimeline>
             {experiences.map((experience) => (
               <VerticalTimelineElement
+                visible={true}
                 key={experience.company_name}
                 date={experience.date}
                 icon={
@@ -112,6 +97,4 @@ const About = () => {
       <CTA />
     </section>
   );
-};
-
-export default About;
+}

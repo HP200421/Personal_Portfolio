@@ -1,4 +1,4 @@
-import { salesforce, bolt, touchmedia } from "../assets/images";
+import { bolt, touchmedia, metron } from "../assets/images";
 import {
   contact,
   css,
@@ -23,7 +23,13 @@ import {
   express,
   mongodb,
   todo,
+  remix,
+  docker,
+  bids,
+  building,
 } from "../assets/icons";
+
+
 
 export const skills = [
   {
@@ -82,6 +88,16 @@ export const skills = [
     type: "State Management",
   },
   {
+    imageUrl: remix,
+    name: "Remix",
+    type: "Web Framework",
+  },
+  {
+    imageUrl: docker,
+    name: "Docker",
+    type: "Tool",
+  },
+  {
     imageUrl: nodejs,
     name: "Node.js",
     type: "Backend",
@@ -100,11 +116,24 @@ export const skills = [
 
 export const experiences = [
   {
+    title: "Software Engineer",
+    company_name: "Metron Security",
+    icon: metron,
+    iconBg: "#fa8269",
+    date: "Jan 2025 - Present",
+    points: [
+      "Built a Jira Forge app to automate project tracking, improving on-time delivery through real-time monitoring.",
+      "Optimized Jira API integrations and built reusable React components, cutting load times by 40% and improving UI performance.",
+      "Developed a custom ServiceNow application to efficiently manage network incidents for MSP and enterprise-level customers.",
+      "Leveraged ServiceNow dashboards to track Incidents, Alerts, and Licenses per customer.",
+    ],
+  },
+  {
     title: "Full Stack Developer",
     company_name: "Touchmedia Ads Software",
     icon: touchmedia,
     iconBg: "#99c5ff",
-    date: "Jun 2024 - Present",
+    date: "Dec 2023 - Jan 2025",
     points: [
       "Developed a dynamic admin panel with React.js, implementing secure user authentication and efficient CRUD operations with Axios.",
       "Built the VIT Architecture College website and admin panel, focusing on session management, CRUD operations, and automating data processes.",
@@ -123,19 +152,6 @@ export const experiences = [
       "Specialized expertise in React.js, demonstrating the ability to build efficient and dynamic user interfaces for web projects.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Experienced in implementing responsive design principles, ensuring optimal user experiences across various devices and screen sizes.",
-    ],
-  },
-  {
-    title: "Salesforce Developer",
-    company_name: "Salesforce",
-    icon: salesforce,
-    iconBg: "#99d8f2",
-    date: "Oct 2022 - Dec 2023",
-    points: [
-      "Completed the Smart Bridge Salesforce Supported Virtual Internship Program, accredited by AICTE.",
-      "Acquired comprehensive knowledge of Salesforce products and services through hands-on experience in Salesforce development.",
-      "Successfully accomplished a Salesforce certification and earned super badges on the Salesforce Trailblazer Platform.",
-      "Engaged in practical application of Salesforce skills during the internship, contributing to real-world projects and solutions.",
     ],
   },
 ];
@@ -160,59 +176,52 @@ export const socialLinks = [
 
 export const projects = [
   {
+    iconUrl: todo,
+    theme: "btn-back-blue",
+    projectType: "Professional",
+    name: "Doctor Appointment",
+    description:
+      "Developed a website for booking doctor appointments and Implemented features for OTP via WhatsApp, mobile number, and email confirmation to enhance user experience.",
+    link: "https://appointment.touchmediaads.com/drshibli",
+  },
+  {
+    iconUrl: building,
+    theme: "btn-back-yellow",
+    projectType: "Professional",
+    name: "Archtype",
+    description:
+      "Built an architecture portfolio website with a custom admin panel for content management, enabling seamless updates for projects, blogs, and media.",
+    link: "https://www.archtype.in/",
+  },
+  {
+    iconUrl: bids,
+    theme: "btn-back-orange",
+    projectType: "Professional",
+    name: "Bids On Motor Admin Panel",
+    description:
+      "Developed an interactive website and user-friendly admin panel, leveraging ReactJS for dynamic and reusable UI component. Integrated Firebase push notifications for Admin Panel.",
+  },
+   {
     iconUrl: zomato,
     theme: "btn-back-red",
+    projectType: "Personal",
     name: "Zomato Landing Page",
     description:
       "A replica of the Zomato landing page, showcasing various restaurants and food options. This project focuses on the frontend implementation using HTML and CSS.",
     link: "https://hp200421.github.io/Zomato_Landing_Page/",
   },
   {
-    iconUrl: metaverse,
-    theme: "btn-back-green",
-    name: "Metaverse Explore",
-    description:
-      "A captivating Metaverse-themed React application built using the Next.js framework, Tailwind CSS for responsive design, and Framer Motion library for stunning animations.",
-    link: "https://metaverseexplore.netlify.app/",
-  },
-  {
-    iconUrl: todo,
-    theme: "btn-back-purple",
-    name: "TODO Application",
-    description:
-      "TODO Application is a simple to-do list application built using React, Context API and Tailwind CSS. It allows users to add, edit, delete tasks and can mark them as completed.",
-    link: "https://manage-todo-daily.netlify.app/",
-  },
-  {
     iconUrl: assistant,
     theme: "btn-back-yellow",
+    projectType: "Personal",
     name: "Desktop Assistant",
     description:
       "Desktop Assistant is a voice-controlled AI assistant that performs various tasks based on user voice commands. The OpenAI GPT-3.5 API for natural language understanding and generation.",
     link: "https://github.com/HP200421/Desktop-Assistant",
-  },
-  {
-    iconUrl: quiz,
-    theme: "btn-back-pink",
-    name: "Quiz Game",
-    description:
-      "The simple quiz game created using HTML, CSS, and JavaScript. It allows users to test their knowledge by answering multiple-choice questions.",
-    link: "https://hp200421.github.io/Quiz_Game/",
-  },
-  {
-    iconUrl: weather,
-    theme: "btn-back-blue",
-    name: "Weather Application",
-    description:
-      "A one-page weather website providing temperature, humidity, wind information, and sunrise/sunset details for specified cities using Weather API.",
-    link: "https://hp200421.github.io/Weather_Application/",
-  },
-  {
-    iconUrl: analysis,
-    theme: "btn-back-black",
-    name: "Hotel Booking Sentiment Analysis",
-    description:
-      "A Python project employing data visualization to analyze trends in hotel booking cancellations, offering valuable insights for informed decision-making by hotel managers and stakeholders.",
-    link: "https://github.com/HP200421/Analysis_of_Hotel_Booking_Cancellation",
-  },
+  }
 ];
+
+export const githubData = {
+  light: ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
+  dark: ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
+};
