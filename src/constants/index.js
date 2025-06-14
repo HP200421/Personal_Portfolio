@@ -29,8 +29,6 @@ import {
   building,
 } from "../assets/icons";
 
-
-
 export const skills = [
   {
     imageUrl: c,
@@ -201,7 +199,7 @@ export const projects = [
     description:
       "Developed an interactive website and user-friendly admin panel, leveraging ReactJS for dynamic and reusable UI component. Integrated Firebase push notifications for Admin Panel.",
   },
-   {
+  {
     iconUrl: zomato,
     theme: "btn-back-red",
     projectType: "Personal",
@@ -218,7 +216,7 @@ export const projects = [
     description:
       "Desktop Assistant is a voice-controlled AI assistant that performs various tasks based on user voice commands. The OpenAI GPT-3.5 API for natural language understanding and generation.",
     link: "https://github.com/HP200421/Desktop-Assistant",
-  }
+  },
 ];
 
 export const githubData = {

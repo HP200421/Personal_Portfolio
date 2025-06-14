@@ -16,7 +16,7 @@ export default function ContributionGraph() {
 
   useEffect(() => {
     const dark = window.matchMedia("(prefers-color-scheme: light)").matches;
-    setColorScheme(dark ? "dark" : "light");
+    setColorScheme(dark ? "light" : "light");
   }, []);
 
   if (!username || !joinYear) {
@@ -30,7 +30,16 @@ export default function ContributionGraph() {
 
   return (
     <div className="flex flex-col xl:flex-row gap-4 p-4">
-      <div className="flex flex-wrap xl:flex-col gap-2 m-auto">
+      <div className="bg-white  border border-gray-200 dark:border-gray-800 p-6 rounded-lg lg:w-[52.1vw] w-full">
+        <GitHubCalendar
+          username={username}
+          colorScheme={colorScheme}
+          blockSize={13}
+          year={calendarYear}
+          theme={githubData}
+        />
+      </div>
+      <div className="flex flex-wrap xl:flex-col gap-2">
         {years.slice(0, 5).map((year) => (
           <YearButton
             key={year}
@@ -41,15 +50,6 @@ export default function ContributionGraph() {
             }
           />
         ))}
-      </div>
-      <div className="bg-white  border border-gray-200 dark:border-gray-800 p-6 rounded-lg lg:w-[52.1vw] w-full">
-        <GitHubCalendar
-          username={username}
-          colorScheme={colorScheme}
-          blockSize={13}
-          year={calendarYear}
-          theme={githubData}
-        />
       </div>
     </div>
   );
