@@ -20,7 +20,9 @@ export default function Home() {
 
         {/* GitHub Contribution Calendar */}
         <div className="mt-12">
-          <h2 className="text-2xl font-semibold mb-4">My GitHub Contributions</h2>
+          <h2 className="text-2xl font-semibold mb-4">
+            My GitHub Contributions
+          </h2>
           <ContributionGraph />
         </div>
       </section>

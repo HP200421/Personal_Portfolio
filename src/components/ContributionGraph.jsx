@@ -42,7 +42,7 @@ export default function ContributionGraph() {
           />
         ))}
       </div>
-      <div className="bg-white  border border-gray-200 dark:border-gray-800 p-6 rounded-lg w-[52.1vw]">
+      <div className="bg-white  border border-gray-200 dark:border-gray-800 p-6 rounded-lg lg:w-[52.1vw] w-full">
         <GitHubCalendar
           username={username}
           colorScheme={colorScheme}
